@@ -1,5 +1,20 @@
 package com.example.i23;
 
+//docker login
+//docker tag <local-image>:<tag> <dockerhub-username>/<repository>:<tag>
+//docker push yourusername/springboot-k8s:latest
+
+//Step 6: Update deployment.yaml
+//
+//Instead of:
+//
+//image: springboot-k8s:latest
+//imagePullPolicy: Never
+//
+//use:
+//
+//image: yourusername/springboot-k8s:latest
+//imagePullPolicy: Always
 public class DemoConstroller {
     /*
     minikube start
