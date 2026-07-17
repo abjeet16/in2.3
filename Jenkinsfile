@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Clone"){
             steps{
-                git ''
+                git 'https://github.com/abjeet16/in2.3.git'
             }
         }
         stage("Build project"){
