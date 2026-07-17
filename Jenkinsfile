@@ -13,7 +13,7 @@ pipeline{
         }
         stage("Build Image"){
             steps{
-                sh 'docker build -t java-kube .'
+                sh 'docker build -t springboot-k8s .'
             }
         }
         stage('Deploy to Kubernetes') {
